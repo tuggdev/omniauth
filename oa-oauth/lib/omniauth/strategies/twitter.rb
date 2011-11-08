@@ -44,7 +44,7 @@ module OmniAuth
           'description' => user_hash['description'],
           'urls' => {
             'Website' => user_hash['url'],
-            'Twitter' => 'http://twitter.com/' + user_hash['screen_name']
+            'Twitter' => 'http://twitter.com/' + (user_hash['screen_name'] || "")
           }
         }
       end
